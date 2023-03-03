@@ -4,9 +4,8 @@
 
 ## Datos
 
-- 🦄 **Desarrollador/a:** *Nombre*
-- 🐇 **Link a red social:** *https://twitter.com/nombre*
-- 🦾 **Perfil:** *Novato / Bajo / Medio / Avanzado / Experto*
+- 🦄 **Desarrollador/a:** Dokja
+- 🦾 **Perfil:** Medio
 - 💬 **Un comentario breve o frase ingeniosa**: *-*
 
 ## Observaciones
