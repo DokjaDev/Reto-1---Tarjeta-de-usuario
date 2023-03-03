@@ -1,0 +1,141 @@
+/* 
+
+    Tamaño de la card: 450x600px aprox.
+    Colores de fondo:  #ff3867 ,  #ffc873 ,  #d37ec6
+    Otros colores:  #a05d5d ,  #2d7cbf ,  #888888
+    Tamaño de avatar: 128x128px aprox.
+    Tamaño de fotografía: 300x200px aprox.
+    Tipografías: Poppins, Montserrat.
+
+*/
+
+:root{
+    /* Colores de fondo */
+    --color-de-fondo1: #ff3867;
+    --color-de-fondo2: #ffc873;
+    --color-de-fondo3: rgb(211,126,198);
+    --CapaTransaparente: rgb(211,126,198,0.75);
+
+    /* Otros Colores */
+    --primerColor:  #a05d5d;
+    --segundoColor: #2d7cbf ;
+    --tercerColor:  #888888;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    background: linear-gradient(to right top,var(--color-de-fondo1), var(--color-de-fondo2), var(--color-de-fondo3));
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+}
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    height: 65rem;
+    width: 40rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: inset 0 0 3rem 0 var(--tercerColor);
+}
+
+.hero-image{
+    display: flex;
+    min-height: 30%;
+    background: linear-gradient(rgba(64, 0, 106, 0.5),rgba(109, 3, 185, 0.5),rgba(61, 0, 105, 0.5)), url(./assets/img/fondo-herocard.jpg);
+    background-size: cover;
+    background-position: center 25rem;
+    justify-content: center;
+    align-items: flex-end;
+    border-bottom: 0.5rem solid var(--color-de-fondo1);
+}
+.logo{
+    height: 128px;
+    width: 128px;
+    background-color: var(--color-de-fondo2);
+    background-image: url(./assets/img/Me-logo.png);
+    background-size: 17rem;
+    background-position: top center;
+    border: 0.5rem solid var(--color-de-fondo1);
+    border-radius: 100%;
+    position: relative;
+    top: 2rem;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.aling-center{
+    color: crimson;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 5rem 5rem 5rem;
+    justify-content: space-around;
+    min-height: 60%;
+    flex-wrap: wrap;
+}
+
+.bold{
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+.description-font{
+    font-size: 1.5rem;
+}
+
+.button{
+    height: 4rem;
+    width: 10rem;
+    margin: 0 auto;
+    color: var(--segundoColor);
+    font-weight: bold;
+    border-style: none;
+    border-radius: 10rem;
+    background-color: transparent;
+    border: 0.2rem solid var(--segundoColor);
+    cursor: pointer;
+}
+
+
+
+
+.footer{
+    display: flex;
+    min-height: 10%;
+}
+
+.social-b{
+    width: 100%;
+    background-color: transparent;
+    border-style: none;
+    border-top:  solid 1px;
+    border-right: solid 1px;
+}
+
+.social-b:last-of-type{
+    border-right: none;
+}
